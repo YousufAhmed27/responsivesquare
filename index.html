@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="bro.css">
+
+  <title>Frontend Mentor | Interactive square details form</title>
+
+</head>
+
+<body>
+
+
+  <main class="container">
+    <div class="frontCard flex">
+      <img src="card-logo.svg" alt="card-logo">
+      <span>0000 0000 0000 0000</span>
+      <div class="foot">
+        <div class="user">Jane Appleseed</div>
+        <div class="date">
+          <div class="month">00</div>/<div class="year">00</div>
+        </div>
+      </div>
+    </div>
+    <div class="backCard">
+      <span>000</span>
+    </div>
+
+    <div class="text main flex">
+      <div class="flex">
+        <label for="cardholder">Cardholder Name</label>
+        <input id="cardholder" type="text" maxlength="20" class="add" name="cardholder"
+          placeholder="e.g. Jane Appleseed">
+      </div>
+      <div class="flex">
+        <label for="cardnum">Card Number</label>
+        <input id="cardnum" type="text" class="add" name="cardnumber" maxlength="19"
+          placeholder="e.g. 1234 5678 9123 0000">
+      </div>
+      <div class="flex">
+        <div class="names">
+          <label for="month">Exp. Date (MM/YY)</label>
+          <label for="cvc">CVC</label>
+        </div>
+        <div class="inputs">
+          <input id="month" class="add" name="month" type="text" maxlength="2" placeholder="MM">
+          <input id="year" class="add" name="year" type="text" maxlength="2" placeholder="YY">
+          <input id="cvc" class="add" name="year" type="text" maxlength="3" placeholder="e.g. 123">
+        </div>
+      </div>
+      <button class="one">Complete</button>
+
+      <div class="usere error formate">Wrong formate, letters only</div>
+      <div class="usere error blank">Can't be blank</div>
+      <div class="nume error formate">Wrong formate, numbers only</div>
+      <div class="nume error blank">Can't be blank</div>
+      <div class="nume error size">Number isn't available</div>
+      <div class="datee error blank">Can't be blank</div>
+      <div class="datee error formate">Wrong Formate</div>
+      <div class="datee error real">Date isn't real</div>
+      <div class="datee error exp">Your card is expired</div>
+      <div class="cvce error blank">Can't be blank</div>
+      <div class="cvce error formate">Wrong formate</div>
+      <div class="cvce error real">Number isn't real</div>
+
+    </div>
+
+
+    <div class="complete text flex">
+      <img src="icon-complete.svg" alt="complete">
+      <div>
+        <h3>Thank you!</h3>
+        <p>We've added your card details</p>
+      </div>
+      <button type="button">Continue</button>
+    </div>
+  </main>
+
+  <div class="try"></div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Yousuf Gamal Eldeen</a>.
+  </div>
+
+  <script src="bra.js"></script>
+</body>
+
+</html>
